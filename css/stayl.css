@@ -1,0 +1,21 @@
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #24353f;
+}
+input::placeholder {
+    color: #b1b2b6 !important; 
+
+}
+.group{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    h1{
+        color: #17a2b8;
+font-weight: 400;
+    }
+} 

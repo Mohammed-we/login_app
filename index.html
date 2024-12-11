@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/stayl.css">
+    <link rel="stylesheet" href="Css/media.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center flex-column">
+        <!-- نموذج تسجيل الدخول -->
+        <div id="login-form" class="group mt-5 p-5 w-75">
+            <h1 class="text-center">Smart Login System</h1>
+            <form id="login-form-action">
+                <input type="email" id="register-email" required class="form-control bg-transparent w-100 mt-3" placeholder="Enter Your Email">
+                <div id="login-error" style="color: red; display: none;"></div> <!-- رسالة الخطأ -->
+                <input type="password" id="register-password" required class="form-control bg-transparent mt-3 w-100" placeholder="Enter Your password">
+                <button type="submit" class="btn btn-outline-info w-100 mt-4">Log In</button>
+            </form>
+            <p class="text-white text-center mt-3">Don’t have an account? 
+                <a href="javascript:void(0);" onclick="showSignUp()" class="text-white">Sign Up</a>
+            </p>
+        </div>
+
+        <!-- نموذج التسجيل -->
+        <div id="sign-up-form" class="group mt-5 p-5 w-75 form-container" style="display: none;">
+            <h1 class="text-center">Create Your Account</h1>
+            <form id="sign-up-form-action">
+                <input type="text" id="sign-up-name" required class="form-control bg-transparent w-100 mt-3" placeholder="Enter Your Name">
+                <input type="email" id="sign-up-email" required class="form-control bg-transparent w-100 mt-3" placeholder="Enter Your Email">
+                <input type="password" id="sign-up-password" required class="form-control bg-transparent mt-3 w-100" placeholder="Enter Your password">
+                <div id="sign-up-error" style="color: red; display: none;"></div> <!-- رسالة الخطأ -->
+                <button type="submit" class="btn btn-outline-info w-100 mt-4">Sign Up</button>
+            </form>
+            <p class="text-white text-center mt-3">Already have an account? 
+                <a href="javascript:void(0);" onclick="showLogin()" class="text-white">Log In</a>
+            </p>
+        </div>
+
+        <!-- الصفحة الرئيسية (Home) -->
+        <div id="home" class="group mt-5 p-5 w-75" style="display: none;">
+            <h1 class="text-center text-white">Welcome to Your Home Page!</h1>
+            <p id="welcome-message" class="text-center text-white"></p>
+            <button onclick="logout()" class="btn btn-outline-info w-100 mt-4">Log Out</button>
+        </div>
+    </div>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
+
